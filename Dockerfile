@@ -76,7 +76,6 @@ RUN adduser \
     --disabled-login \
     --disabled-password ${RUN_USER}
 
-COPY ./docker-entrypoint.sh /docker-entrypoint.sh
 COPY ./ubuntu/.bashrc ${USER_HOME}
 COPY ./ubuntu/.bash_custom_settings ${USER_HOME}
 
@@ -87,5 +86,4 @@ USER ${RUN_USER}
 ENV USER ${RUN_USER}
 WORKDIR ${USER_HOME}
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["bash"]
