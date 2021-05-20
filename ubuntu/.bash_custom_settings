@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Custom environment variable
+export USE_CCACHE=0
+export LC_ALL=C
