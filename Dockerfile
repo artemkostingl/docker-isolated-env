@@ -35,7 +35,7 @@ RUN apt-get update && \
     maven \
     libssl-dev \
     libncurses5 \
-    git-core \
+    git \
     gnupg \
     flex \
     gcc-multilib \
@@ -51,10 +51,26 @@ RUN apt-get update && \
     libxml-simple-perl \
     python \
     bc \
+    libncurses-dev \
+    gawk \
+    openssl \
+    dkms \
+    libelf-dev \
+    libudev-dev \
+    libpci-dev \
+    libiberty-dev \
+    autoconf \
+    bsdmainutils   \
+    libncurses5-dev \
+    libsdl1.2-dev \
+    libwxgtk3.0-dev \
+    pngcrush \
+    graphviz \
     mc \
     htop \
     vim \
     screen \
+    rsync \
     nload && \
     rm -rf /var/lib/apt/lists/* && \
     apt-get clean
